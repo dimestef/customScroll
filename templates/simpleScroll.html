@@ -1,0 +1,92 @@
+<div class="panel panel-success text-center" id="club">
+    <div class="panel-heading">{{skillFootballer}}</div>
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                Intelligence:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.intelligence}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Intelligence</label>
+                    <input type="number" class="form-control" ng-model="skillObject.intelligence" min="0" max="100" placeholder="Change Intelligence">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Vision:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.vision}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Vision</label>
+                    <input type="number" class="form-control" ng-model="skillObject.vision" min="0" max="100" placeholder="Change Vision">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Speed:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.speed}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Speed</label>
+                    <input type="number" class="form-control" ng-model="skillObject.speed" min="0" max="100" placeholder="Change Speed">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Strength:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.strength}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Strength</label>
+                    <input type="number" class="form-control" ng-model="skillObject.strength" min="0" max="100" placeholder="Change Strength">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Shooting:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.shooting}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Shooting</label>
+                    <input type="number" class="form-control" ng-model="skillObject.shooting" min="0" max="100" placeholder="Change Shooting">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Passing:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.passing}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Passing</label>
+                    <input type="number" class="form-control" ng-model="skillObject.passing" min="0" max="100" placeholder="Change Passing">
+                </div>
+            </li>
+            <li class="list-group-item">
+                Driblling:
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: {{skills.dribbling}}%;">
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-4">Change Driblling</label>
+                    <input type="number" class="form-control" ng-model="skillObject.dribbling" min="0" max="100" placeholder="Change Driblling">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <button class="btn btn-success" ng-click="change('footballer'); updateSkill(skillObject); showFootballerSkills();">Change skill</button>
+</div>

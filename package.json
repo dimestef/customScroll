@@ -1,0 +1,23 @@
+{
+  "name": "cumstomscroll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 8001 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimestef/customScroll.git"
+  },
+  "author": "Dimitar Stefanovski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dimestef/customScroll/issues"
+  },
+  "homepage": "https://github.com/dimestef/customScroll#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

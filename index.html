@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple scroll</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simpleScroll.css" rel="stylesheet">
+</head>
+<body ng-app="scrollApp">
+<div class="container-fluid" ng-controller="simpleScrollController">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <h1>Select pagination</h1>
+            <select ng-model="selectedObject" ng-options="n.number for n in numbers" size="5"
+                    pagination-on-scroll load-more="loadMoreNumbers()">
+            </select>
+        </div>
+        <div class="col-md-4">
+            <h1>Div pagination</h1>
+            <div class="scrollDiv" pagination-on-scroll load-more="loadMoreNames()">
+                <ul>
+                    <li ng-repeat="n in names">{{n.name}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="app.js"></script>
+<script src="controller/simpleScrollController.js"></script>
+<script src="directives/simpleScrollDirective.js"></script>
+</body>
+</html>
